@@ -30,4 +30,7 @@ public class SysMenu {
     //该字段不属于数据库表，需要排除
     @TableField(exist = false)
     private List<SysMenu> children = new ArrayList<>();
+    @TableField(exist = false)
+    private Boolean open;
+
 }
